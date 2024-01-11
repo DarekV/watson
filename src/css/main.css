@@ -1,3 +1,6 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+/* font-family: "Open Sans", sans-serif;*/
 /* ====================================
 // css variables
 // ==================================== */
@@ -26,6 +29,7 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  padding-bottom: 80px;
 }
 
 a {
@@ -42,3 +46,147 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+a {
+  text-decoration: none;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  &:hover .img-button {
+    opacity: 1;
+  }
+}
+
+img {
+  width: 100%;
+  /* max-height: 530px; */
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/10;
+}
+
+.img-big {
+  max-height: 550px;
+}
+
+.img-info {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.img-type {
+  padding: 2px 10px;
+  background-color: #e41e13;
+  color: white;
+}
+
+article {
+  margin-top: 40px;
+}
+
+h2 {
+  margin-top: 80px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+article h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.img-type {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.autor {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 1200px) {
+  .article-big h1 {
+    font-size: 24px;
+  }
+  .article-big p {
+    font-size: 16px;
+  }
+  .article-big .autor {
+    font-size: 14px;
+  }
+}
+
+.economie {
+  background-color: #1837b6;
+}
+
+.divertissement {
+  background-color: #7cd401;
+}
+
+.sport {
+  background-color: #fb8e00;
+}
+
+.economie-title {
+  color: #1837b6;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1837b6;
+}
+
+.sport-title {
+  color: #fb8e00;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fb8e00;
+}
+
+.suisse-title {
+  color: #e41e13;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e41e13;
+}
+.img-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.img-button img {
+  height: 22px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.bubble-container {
+  position: relative;
+}
+
+.bubble-container p {
+  font-size: 12px;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -5px);
+}
